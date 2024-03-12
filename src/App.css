@@ -1,9 +1,18 @@
+.App {
+  max-width: 600px;
+  margin: 0 auto;
+}
 .App header {
   margin: 30px 0;
   text-align: center;
+  border: 1px solid saddlebrown;
 }
 .App footer {
   font-size: 12px;
   margin: 30px 0;
   text-align: center;
+}
+.App main {
+  border: 1px solid green;
+  padding: 30px;
 }
