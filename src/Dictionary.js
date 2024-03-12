@@ -33,9 +33,7 @@ export default function Dictionary() {
           />
         </form>
       </section>
-      <section>
-        <Results results={results} />
-      </section>
+      <Results results={results} />
     </div>
   );
 }
