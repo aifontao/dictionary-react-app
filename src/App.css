@@ -1,6 +1,10 @@
 .App {
-  background-color: #f2f2f2;
-  border-radius: 6px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.1)),
+    url(./dictionary.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
   margin: 20px auto;
   max-width: 600px;
   padding: 20px;
@@ -10,8 +14,23 @@
   padding: 20px;
   text-align: center;
 }
+.App h1 {
+  color: #f9f9f9;
+  font-size: 40px;
+  font-weight: bold;
+}
+
 .App footer {
+  color: #f9f9f9;
   font-size: 12px;
   padding: 10px;
   text-align: center;
+}
+.App footer a {
+  color: #f9f9f9;
+  text-decoration: none;
+  transition: 200ms all ease-in-out;
+}
+.App footer a:hover {
+  color: #a1c9cde3;
 }
