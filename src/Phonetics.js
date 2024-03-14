@@ -1,17 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
+import { FaVolumeMute, FaVolumeUp } from "react-icons/fa";
+import "./Phonetics.css";
 
 export default function Phonetics(props) {
-  function play() {
+  const [currentIcon, setCurrentIcon] = useState(<FaVolumeMute />);
+  console.log(props);
+
+  function handleClick() {
     let sound = props.phonetic.audio;
-    new Audio(sound).play();
-    console.log(Audio);
+    let audio = new Audio(sound);
+
+    if (audio.paused) {
+      audio.play();
+      setCurrentIcon(<FaVolumeUp />);
+      audio.onended = function () {
+        setCurrentIcon(<FaVolumeMute />);
+      };
+    } else {
+      audio.pause();
+      audio.currentTime = 0;
+      setCurrentIcon(<FaVolumeMute />);
+    }
   }
 
   return (
     <span className="Phonetics">
-      <button onClick={play}>
-        <i class="fa-solid fa-volume-high"></i>
-      </button>
+      <button onClick={handleClick}>{currentIcon}</button>
       <span>{props.phonetic.text}</span>
     </span>
   );
