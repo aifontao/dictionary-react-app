@@ -22,7 +22,11 @@ function App() {
           <strong>Ana Fontão</strong>
         </a>{" "}
         and open-sourced on{" "}
-        <a href="https://github.com/aifontao/dictionary-react-app">
+        <a
+          href="https://github.com/aifontao/dictionary-react-app"
+          target="_blank"
+          rel="noreferrer"
+        >
           <strong>Github</strong>
         </a>
       </footer>

@@ -1,5 +1,5 @@
 .App {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.1)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05)),
     url(./dictionary.jpg);
   background-size: cover;
   background-position: center;
@@ -7,9 +7,15 @@
   border-radius: 15px;
   margin: 20px auto;
   max-width: 600px;
-  padding: 20px;
+  padding: 15px 0;
   color: #392f2f;
 }
+
+.App .container {
+  padding: 0;
+  margin: 0 auto;
+}
+
 .App header {
   padding: 20px;
   text-align: center;
