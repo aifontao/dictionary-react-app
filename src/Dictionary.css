@@ -9,3 +9,14 @@
 .Dictionary input {
   width: 100%;
 }
+
+.Dictionary h3 {
+  font-size: 22px;
+  line-height: 2;
+}
+
+.Dictionary .hint {
+  font-size: 12px;
+  margin-top: 8px;
+  opacity: 0.7;
+}

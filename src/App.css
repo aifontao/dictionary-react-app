@@ -3,6 +3,8 @@
   border-radius: 6px;
   margin: 20px auto;
   max-width: 600px;
+  padding: 20px;
+  color: #392f2f;
 }
 .App header {
   padding: 20px;
