@@ -4,7 +4,7 @@ import "./Phonetics.css";
 
 export default function Phonetics(props) {
   const [currentIcon, setCurrentIcon] = useState(<FaVolumeMute />);
-  console.log(props.phonetic.audio);
+  console.log(props.phonetic);
   function handleClick() {
     let audio = new Audio(props.phonetic.audio);
 
@@ -21,10 +21,14 @@ export default function Phonetics(props) {
     }
   }
 
-  return (
-    <span className="Phonetics">
-      <button onClick={handleClick}>{currentIcon}</button>
-      <span>{props.phonetic.text}</span>
-    </span>
-  );
+  if (props.phonetic.audio) {
+    return (
+      <span className="Phonetics">
+        <button onClick={handleClick}>{currentIcon}</button>
+        <span>{props.phonetic.text}</span>
+      </span>
+    );
+  } else {
+    return <span className="Phonetics">{props.phonetic.text}</span>;
+  }
 }
