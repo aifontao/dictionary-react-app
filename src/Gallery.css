@@ -1,4 +1,9 @@
 .Gallery img {
-  margin: 10px 0;
   border-radius: 4px;
+  margin: 10px 0;
+  transition: all 200ms ease-in-out;
+}
+.Gallery img:hover {
+  opacity: 2;
+  transform: scale(1.1, 1.1);
 }
