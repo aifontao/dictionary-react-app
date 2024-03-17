@@ -4,7 +4,6 @@ import "./Phonetics.css";
 
 export default function Phonetics(props) {
   const [currentIcon, setCurrentIcon] = useState(<FaVolumeMute />);
-  console.log(props.phonetic);
   function handleClick() {
     let audio = new Audio(props.phonetic.audio);
 
